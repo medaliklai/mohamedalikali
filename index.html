@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="https://kit.fontawesome.com/dfb2e011d3.js" crossorigin="anonymous"></script>
+        <title> Mohamed Ali</title>
+        <link rel="icon" href="./images/ninja.png" type="image/x-icon">
+    </head>
+
+    <body>
+        <!-- start header -->
+
+
+        <nav>
+            <div class="container">
+
+                <div class="logo">
+                    <!-- <img src="../../public/images/logo1.png" alt=""> -->
+                    <div class="logo-name">Mohamed Ali</div>
+                </div>
+
+                <ul>
+                    <li><a href='#about' onclick="hidebar()">About</a></li>
+                    <li><a href='#works' onclick="hidebar()">Works</a></li>
+                    <li><a href='#skills' onclick="hidebar()">Skills</a></li>
+                    <li><a href='#education' onclick="hidebar()">Education</a></li>
+
+                </ul>
+
+                <div class="bars" onclick="handleClick()"><i class="fa-solid fa-bars-staggered fa-2x"></i></div>
+
+            </div>
+        </nav>
+        <!-- end header -->
+
+        <!-- start about -->
+        <div class="about" id="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="img"></div>
+                    <div class="info">
+
+                        <span class="name"> I'am mohamed ali klai</span>
+                        <span>I'am a full stack web developper</span> <br>
+
+                        <span>
+                            <i class="fa-solid fa-phone"></i> 55228715
+                        </span><br>
+
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i> Tunis
+                        </span><br>
+
+                        <span>
+                            <i class="fa-solid fa-at"></i>medali.klai@esprit.tn
+                        </span><br>
+                        <span class="download">
+                            <a href="./cv-med-ali-klai.pdf" download id="download">
+                                Download CV
+                            </a>
+                        </span><br>
+                        <div class="contacts">
+                            <div class="contact-des">
+                                <a href="https://www.facebook.com/profile.php?id=100010854570103"><i
+                                        class="fa-brands fa-facebook-f"></i></a>
+                            </div>
+                            <div class="contact-des">
+                                <a href="https://www.instagram.com/med.ali.klai.96/?hl=fr"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                            </div>
+                            <div class="contact-des">
+                                <a href="https://www.linkedin.com/in/medali-klai-02843a20a/"><i
+                                        class="fa-brands fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end about -->
+
+
+
+        <!-- start works -->
+        <div class="works" id="works">
+            <div class="special-heading">Works</div>
+            <div class="container">
+                <div class="box" onclick="handleDesctiption(0)">
+                    <img src=" images/chercher.jpg" alt="">
+                    <div class="work-info">
+                        <h2>
+                            G-pharam
+                        </h2>
+                        <div class="description">
+                            <p>is a solution for pharmacy customers
+                                the customer can search for drugs and place orders</p>
+                            <div class="">
+                                <h3>technoligie:</h3> Html Css Php Java SpringBoot ReactJs
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="box" onclick="handleDesctiption(1)">
+                    <img src="images/4.jpg" alt="">
+                    <div class="work-info">
+                        <h2>
+                            Gestion des pharmacie
+                        </h2>
+                        <div class="description">
+                            <p>manage pharmacy drugs: add, modify, delete, search for drugs
+                                display expired drugs
+                                manage pharmacy customer orders</p>
+                            <div class="">
+                                <h3>technoligie:</h3> Html Css Php Java SpringBoot ReactJs
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="box" onclick="handleDesctiption(2)">
+                    <img src="images/bn.jpg" alt="">
+                    <div class="work-info">
+                        <h2>
+                            Gestion des comptes bancaires
+                        </h2>
+                        <div class="description">
+                            <p>manage bank accounts:
+                                add, modify, delete accounts
+                                makes transactions (payment, transfer)</p>
+                            <div class="">
+                                <h3>technoligies:</h3> Html Css Php Java SpringBoot ReactJs
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- end works -->
+
+        <!-- start education-->
+
+        <!-- end education-->
+
+        <!-- start skills -->
+        <div class="skills" id="skills">
+            <h2 class="special-heading">Skills</h2>
+            <div class="container">
+                <div class="skill-box">
+                    <div class="icon"><i class="fab fa-html5 fa-3x" style="color:#922B21"></i></div>
+
+                </div>
+                <div class="skill-box">
+                    <div class="icon"><i class="fab fa-css3-alt fa-3x" style="color:#1F618D;"></i></div>
+
+                </div>
+                <div class="skill-box">
+                    <div class="icon"><i class="fab fa-js-square fa-3x" style="color: #D4AC0D"></i></div>
+
+                </div>
+                <div class="skill-box">
+                    <div class="icon"><i class="fab fa-react fa-3x" style="color: #5499C7"></i></i></div>
+
+                </div>
+                <div class="skill-box">
+                    <div class="icon"><i class="fab fa-node fa-3x" style="color:#1D8348"></i></div>
+
+                </div>
+                <div class="skill-box">
+                    <div class="icon"><i class="fab fa-php fa-3x" style="color: #D35400;"></i></div>
+
+                </div>
+                <div class="skill-box">
+                    <div class="icon"><i class="fab fa-symfony fa-3x" style="color: #CCD1D1"></i></div>
+
+                </div>
+                <div class="skill-box">
+                    <div class="icon"><i class="fab fa-java fa-3x" style="color: tomato;"></i></div>
+
+                </div>
+                <div class="skill-box">
+                    <div class="icon"><img src="images/spring.png" alt="" style="height: 50px;"></div>
+
+
+                </div>
+                <div class="skill-box">
+                    <div class="icon"><img src="images/redux.svg" alt="" style="height: 50px;"></div>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- end skills -->
+
+        <!-- start contact -->
+        <div class="education" id="education">
+            <div class="container">
+                <h2 class="special-heading">Education</h2>
+                <div class="degree-box">
+                    <div class="annee">2021</div>
+                    <div class="degree">
+                        <div class="lieu">
+                            center elife silian
+                        </div>
+                        <div class="title">
+                            <li>cqc training</li>
+                        </div>
+                    </div>
+                </div>
+                <div class="degree-box">
+                    <div class="annee">2019</div>
+                    <div class="degree">
+                        <div class="lieu">
+                            IsiKef
+                        </div>
+                        <div class="title">
+                            <li>fundamental degree in computer science</li>
+                        </div>
+                    </div>
+                </div>
+                <div class="degree-box">
+                    <div class="annee">2015</div>
+                    <div class="degree">
+                        <div class="lieu">
+                            el kef technical high school
+                        </div>
+                        <div class="title">
+                            <li>Bachelor of Computer Science</li>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- end contact -->
+        <!-- start footer -->
+        <footer>
+            <div class="container">
+                <div>&copy;2022 Made By Mohamed Ali KLAI</div>
+            </div>
+        </footer>
+
+
+
+        <!-- end footer -->
+
+        <script src="main.js"></script>
+    </body>
+
+</html>
