@@ -1,17 +1,28 @@
 var count = 1;
 const handleClick = () => {
-  count += 1;
   const ul = document.querySelector("ul");
-  if (count % 2 === 0) {
-    ul.style.left = 0;
-  } else {
-    ul.style.left = "-100%";
-  }
+  const show = document.querySelector(".fa-bars-staggered");
+  const close = document.querySelector(".fa-xmark");
+  ul.style.left = "0";
+  show.style.display = "none";
+  close.style.display = "block";
+};
+const handleClose = () => {
+  const ul = document.querySelector("ul");
+  const show = document.querySelector(".fa-bars-staggered");
+  const close = document.querySelector(".fa-xmark");
+  ul.style.left = "-100%";
+  show.style.display = "block";
+  close.style.display = "none";
 };
 const hidebar = () => {
-  const ul = document.querySelector("ul");
-  ul.style.left = "-300px";
   count += 1;
+  const ul = document.querySelector("ul");
+  const show = document.querySelector(".fa-bars-staggered");
+  const close = document.querySelector(".fa-xmark");
+  ul.style.left = "-100%";
+  show.style.display = "block";
+  close.style.display = "none";
 };
 
 let nb = 1;

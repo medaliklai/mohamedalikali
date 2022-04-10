@@ -11,7 +11,7 @@ body {
 }
 
 :root {
-  --main-color: rgba(66, 65, 65, 0.5);
+  --main-color: rgba(66, 65, 65, 0.8);
   --second-color: #00d2be;
 }
 
@@ -88,11 +88,19 @@ nav .container .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: grab;
+  border-radius: 50%;
+  background-color: white;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  font-size: 80px;
+
+  -moz-text-decoration-color: black;
 }
 
 nav .container .logo-name {
-  color: white;
+  color: black;
   font-size: 30px;
 }
 
@@ -116,7 +124,7 @@ nav .container ul {
     top: 60px;
     height: 100vh;
     background-color: var(--main-color);
-    width: 300px;
+    width: 100%;
     left: -100%;
     z-index: 1;
   }
@@ -153,19 +161,13 @@ nav .container ul li a:hover {
   background-color: var(--second-color);
 }
 
-nav .container ul li a:click {
-  background-color: black;
-}
-
-nav .container ul li a.active {
-  background-color: skyblue;
-}
-
 nav .bars {
   display: none;
   color: whitesmoke;
 }
-
+nav .bars .fa-xmark {
+  display: none;
+}
 @media (max-width: 767px) {
   nav .bars {
     display: inline;
@@ -181,7 +183,8 @@ nav .bars {
 /* start about */
 .about {
   padding-bottom: 50px;
-  background-image: url("../images/istockphoto-984824408-170667a.jpg");
+  background-image: url("../images/pexels-roberto-nickson-2885320.jpg");
+  /* background-color: #616a6b; */
   background-size: cover;
 }
 .about .container .about-content {
@@ -195,18 +198,18 @@ nav .bars {
   }
 }
 .about .container .about-content .img {
-  background-color: red;
-  height: 400px;
-  width: 400px;
+  height: 500px;
+  width: 500px;
   margin: auto;
+  background-image: url("../images/d7e74347-d352-486f-a778-3fd4af561d34.jpg");
+  background-size: cover;
+
+  background-color: #ccd1d1;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  background-image: url("../images/personel.JPEG");
-  background-size: cover;
-  border: 3px solid black;
 }
 @media (max-width: 767px) {
   .about .container .about-content .img {
@@ -257,17 +260,20 @@ nav .bars {
   margin-top: 20px;
 }
 .about .container .about-content .info #download {
-  background-color: #00d2be;
-  padding: 5px;
+  border: 2px solid #58d68d;
+  padding: 7px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
-  color: white;
+  color: #58d68d;
   text-decoration: none;
 }
 /* end about */
 
 /* start works */
+.works {
+  background-color: black;
+}
 .works .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -295,6 +301,7 @@ nav .bars {
   -moz-transition: 2s;
   -ms-transition: 2s;
   -o-transition: 2s;
+  color: white;
 }
 
 .works .container .box img {
@@ -420,14 +427,14 @@ nav .bars {
 
 /* start footer */
 footer {
-  background-color: rgb(24, 23, 23);
+  background-color: #d35400;
   color: white;
   height: 50px;
 }
 
 footer .container div {
   text-align: center;
-  color: rgb(78, 75, 75);
+  color: white;
   transform: translateY(50%);
   -webkit-transform: translateY(50%);
   -moz-transform: translateY(50%);

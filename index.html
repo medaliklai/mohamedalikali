@@ -16,16 +16,12 @@
 
     <body>
         <!-- start header -->
-
-
         <nav>
             <div class="container">
-
                 <div class="logo">
                     <!-- <img src="../../public/images/logo1.png" alt=""> -->
-                    <div class="logo-name">Mohamed Ali</div>
+                    <div class="logo-name">MAK</div>
                 </div>
-
                 <ul>
                     <li><a href='#about' onclick="hidebar()">About</a></li>
                     <li><a href='#works' onclick="hidebar()">Works</a></li>
@@ -33,9 +29,10 @@
                     <li><a href='#education' onclick="hidebar()">Education</a></li>
 
                 </ul>
-
-                <div class="bars" onclick="handleClick()"><i class="fa-solid fa-bars-staggered fa-2x"></i></div>
-
+                <div class="bars">
+                    <i class=" fa-solid fa-bars-staggered fa-2x" onclick="handleClick()""></i>
+                    <i class=" fa-solid fa-xmark fa-2x" onclick="handleClose()"></i>
+                </div>
             </div>
         </nav>
         <!-- end header -->
@@ -62,7 +59,7 @@
                             <i class="fa-solid fa-at"></i>medali.klai@esprit.tn
                         </span><br>
                         <span class="download">
-                            <a href="./cv-med-ali-klai.pdf" download id="download">
+                            <a href="./download/cv-med-ali-klai.pdf" download id="download">
                                 Download CV
                             </a>
                         </span><br>
@@ -85,9 +82,6 @@
             </div>
         </div>
         <!-- end about -->
-
-
-
         <!-- start works -->
         <div class="works" id="works">
             <div class="special-heading">Works</div>
@@ -112,7 +106,7 @@
                     <img src="images/4.jpg" alt="">
                     <div class="work-info">
                         <h2>
-                            Gestion des pharmacie
+                            Pharmacy management
                         </h2>
                         <div class="description">
                             <p>manage pharmacy drugs: add, modify, delete, search for drugs
@@ -122,14 +116,13 @@
                                 <h3>technoligie:</h3> Html Css Php Java SpringBoot ReactJs
                             </div>
                         </div>
-
                     </div>
                 </div>
                 <div class="box" onclick="handleDesctiption(2)">
                     <img src="images/bn.jpg" alt="">
                     <div class="work-info">
                         <h2>
-                            Gestion des comptes bancaires
+                            Bank account management
                         </h2>
                         <div class="description">
                             <p>manage bank accounts:
