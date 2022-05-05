@@ -88,8 +88,6 @@ nav .container .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
-  background-color: white;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -100,8 +98,9 @@ nav .container .logo {
 }
 
 nav .container .logo-name {
-  color: black;
+  color: white;
   font-size: 30px;
+  text-transform: uppercase;
 }
 
 nav .container .logo img {
@@ -201,9 +200,9 @@ nav .bars .fa-xmark {
   height: 500px;
   width: 500px;
   margin: auto;
-  background-image: url("../images/d7e74347-d352-486f-a778-3fd4af561d34.jpg");
+  background-image: url("../images/IMG_20220417_162524.png");
   background-size: cover;
-
+  background-position-x: center;
   background-color: #ccd1d1;
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -302,6 +301,9 @@ nav .bars .fa-xmark {
   -ms-transition: 2s;
   -o-transition: 2s;
   color: white;
+  background-color: var(--main-color);
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .works .container .box img {
@@ -427,7 +429,7 @@ nav .bars .fa-xmark {
 
 /* start footer */
 footer {
-  background-color: #d35400;
+  background-color: var(--main-color);
   color: white;
   height: 50px;
 }
